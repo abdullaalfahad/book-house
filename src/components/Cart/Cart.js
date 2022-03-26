@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Select from '../Select/Select';
 import './Cart.css'
 
 const Cart = ({ selected, chooseAgain }) => {
 
+    const [choose, setChoose] = useState([]);
+
     const chooseOne = (selected) => {
-        // console.log(selected);
         const random = Math.floor(Math.random() * selected.length);
         const value = (selected[random]);
-        return value;
+        setChoose(value);
+        document.getElementsByClassName('random').style.display = 'block';
     }
 
     return (
@@ -20,9 +22,10 @@ const Cart = ({ selected, chooseAgain }) => {
                     select={select}
                 ></Select>)
             }
-            <div>
+            <div className="random">
+                <h4>Selected one:</h4>
                 {
-
+                    <Select select={choose}></Select>
                 }
             </div>
             <div className="choose-one">

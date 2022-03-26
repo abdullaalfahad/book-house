@@ -13,3 +13,7 @@
 .choose-one, .choose-again {
     text-align: center;
 }
+
+.random {
+    display: none;
+}
