@@ -1,8 +1,9 @@
 import React from 'react';
+import './Question.css'
 
 const Question = () => {
     return (
-        <div>
+        <div className="question">
             <h4>Q1: How react works?</h4>
             <p>Answer: React, at its heart, essentially maintains a tree for you. On the nodes, this tree can perform efficient diff computations.
 

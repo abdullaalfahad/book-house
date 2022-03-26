@@ -6,12 +6,16 @@ import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
 const Select = ({ select }) => {
     const { img, name } = select;
     return (
-        <div className="select">
-            <img src={img} alt="Book" />
-            <p>{name}</p>
-            <button>
-                <FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon>
-            </button>
+        <div>
+            {
+                select.name && <div className="select">
+                    <img src={img} alt="Book" />
+                    <p>{name}</p>
+                    <button>
+                        <FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon>
+                    </button>
+                </div>
+            }
         </div>
     );
 };

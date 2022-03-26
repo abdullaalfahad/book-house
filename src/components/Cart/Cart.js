@@ -23,17 +23,15 @@ const Cart = ({ selected, chooseAgain }) => {
             }
             <div className="random">
                 <h4>Selected one:</h4>
-                {
-                    <Select select={choose}></Select>
-                }
+                <Select select={choose}></Select>
             </div>
             <div className="choose-one">
                 <button onClick={() => chooseOne(selected)}>Choose one for me</button>
             </div>
             <div className="choose-again">
-                <button onClick={chooseAgain}>Choose Again</button>
+                <button onClick={() => chooseAgain()}>Choose Again</button>
             </div>
-        </div>
+        </div >
     );
 };
 
