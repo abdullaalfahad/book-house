@@ -1,0 +1,11 @@
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.select img{
+    margin-right: 5px;
+    width: 30px;
+    height: 50%;
+    border-radius: 50%;
+}
