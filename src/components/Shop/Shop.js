@@ -18,6 +18,10 @@ const Shop = () => {
         setSelected(newAdd);
     }
 
+    const chooseAgain = () => {
+        setSelected([]);
+    }
+
     return (
         <div className="shop">
             <div className="book-container">
@@ -30,7 +34,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart selected={selected}></Cart>
+                <Cart selected={selected} chooseAgain={chooseAgain}></Cart>
             </div>
         </div>
     );

@@ -2,12 +2,13 @@ import React from 'react';
 import Select from '../Select/Select';
 import './Cart.css'
 
-const Cart = ({ selected }) => {
+const Cart = ({ selected, chooseAgain }) => {
 
     const chooseOne = (selected) => {
         // console.log(selected);
         const random = Math.floor(Math.random() * selected.length);
-        console.log(selected[random])
+        const value = (selected[random]);
+        return value;
     }
 
     return (
@@ -20,13 +21,15 @@ const Cart = ({ selected }) => {
                 ></Select>)
             }
             <div>
+                {
 
+                }
             </div>
             <div className="choose-one">
                 <button onClick={() => chooseOne(selected)}>Choose one for me</button>
             </div>
             <div className="choose-again">
-                <button>Choose Again</button>
+                <button onClick={chooseAgain}>Choose Again</button>
             </div>
         </div>
     );
