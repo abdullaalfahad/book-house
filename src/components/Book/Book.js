@@ -2,7 +2,7 @@ import React from 'react';
 import './Book.css'
 
 const Book = (props) => {
-    const { id, img, name, price } = props.book;
+    const { img, name, price } = props.book;
     return (
         <div className="book">
             <img src={img} alt="Book" />
