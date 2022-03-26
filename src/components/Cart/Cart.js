@@ -29,7 +29,7 @@ const Cart = ({ selected, chooseAgain }) => {
                 <button onClick={() => chooseOne(selected)}>Choose one for me</button>
             </div>
             <div className="choose-again">
-                <button onClick={chooseAgain}>Choose Again</button>
+                <button onClick={() => chooseAgain(setChoose)}>Choose Again</button>
             </div>
         </div >
     );

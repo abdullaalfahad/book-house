@@ -18,8 +18,8 @@ const Shop = () => {
         setSelected(newAdd);
     }
 
-    const chooseAgain = (choose) => {
-
+    const chooseAgain = (setChoose) => {
+        setChoose([]);
         setSelected([]);
     }
 
