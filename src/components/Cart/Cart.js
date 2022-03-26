@@ -10,7 +10,6 @@ const Cart = ({ selected, chooseAgain }) => {
         const random = Math.floor(Math.random() * selected.length);
         const value = (selected[random]);
         setChoose(value);
-        document.getElementsByClassName('random').style.display = 'block';
     }
 
     return (
