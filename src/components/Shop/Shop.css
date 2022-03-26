@@ -7,7 +7,7 @@
 .book-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 80px 0px;
+    grid-gap: 60px 0px;
     justify-items: center;
 }
 
