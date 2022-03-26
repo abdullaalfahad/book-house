@@ -4,8 +4,14 @@
 }
 
 .select img{
-    margin-right: 5px;
+    margin-right: 10px;
     width: 30px;
     height: 50%;
     border-radius: 50%;
+}
+
+.select button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
 }

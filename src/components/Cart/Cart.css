@@ -2,3 +2,14 @@
     position: sticky;
     top: 10px;
 }
+
+.cart h2 {
+    text-align: center;
+}
+
+.choose-one {
+    margin: 10px 0 5px;
+}
+.choose-one, .choose-again {
+    text-align: center;
+}
